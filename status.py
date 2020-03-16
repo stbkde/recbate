@@ -13,7 +13,7 @@ streamer_list = []
 
 def print_status(streamer):
     if b.is_online(streamer):
-        print(streamer + " is online")
+        print("== " + streamer + " is online ==")
     else:
         print(streamer + " is offline")
 
