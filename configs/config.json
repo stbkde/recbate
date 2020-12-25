@@ -3,6 +3,6 @@
     "rate_limit": true,
     "rate_limit_time": 5,
     "default_export_location": "./list.txt",
-    "streamers": [],
-    "download_location": "videos"
+    "download_location": "videos",
+    "streamers": []
 }
