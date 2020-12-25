@@ -1,4 +1,4 @@
-# Recordurbate-streamlink
+# Recbate
 A Bot to automatically record Chaturbate live streams (using streamlink).
 
 <a href="https://github.com/oliverjrose99/Recordurbate/issues/39">Why use streamlink?</a>
@@ -23,7 +23,7 @@ If you already have streamlink installed, you don't need to build it. Sideload t
 
 View the usage/help text
 ```
-./Recordurbate help
+./Recbate help
 ```
 
 Check who is online, and view list of currently downloading streams
@@ -33,25 +33,25 @@ Check who is online, and view list of currently downloading streams
 
 Add or remove a streamer to record
 ```
-./Recordurbate.py [add | del] username
+./Recbate.py [add | del] username
 ```
 
 Start, stop or restart the daemon
 ```
-./Recordurbate.py [start | stop | restart]
+./Recbate.py [start | stop | restart]
 ```
 
 List the streamers in the config
 ```
-./Recordurbate list
+./Recbate list
 ```
 
 Import streamers from a file
 ```
-./Recordurbate import [file]
+./Recbate import [file]
 ```
 
 Export streamers to a file. The file parameter is optional and the default location will be used if not passed
 ```
-./Recordurbate.py export [file]
+./Recbate.py export [file]
 ```

@@ -4,12 +4,12 @@ from daemon import Daemon
 import config as Config
 
 def usage():
-    print("\nUsage: Recordurbate [add | del] username")
-    print("       Recordurbate [start | stop | restart]")
-    print("       Recordurbate list")
-    print("       Recordurbate import list.txt")
-    print("       Recordurbate export [file location]\n")
-    print("       Recordurbate help\n")
+    print("\nUsage: recbate [add | del] username")
+    print("       recbate [start | stop | restart]")
+    print("       recbate list")
+    print("       recbate import list.txt")
+    print("       recbate export [file location]\n")
+    print("       recbate help\n")
 
 def check_num_args(num):
     if len(sys.argv) != num:

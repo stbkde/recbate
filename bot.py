@@ -121,12 +121,14 @@ class Bot:
                         # prep args
                         now = datetime.datetime.now()
                         date = now.strftime("%m-%d-%Y_%H-%M-%S")
-                        create_folder("videos/{}".format(streamer[0]))
+                        create_folder("{}/{}".format(self.config["download_location"], streamer[0]))
                         args = ["streamlink",  # streamlink bin
                                 "https://chaturbate.com/{}/".format(streamer[0]),  # chaturbate url
                                 "best",
                                 "-o",
-                                "videos/{}/{}_{}.mp4".format(streamer[0], streamer[0], date)]
+                                "{}/{}/{}_{}.mp4".format(self.config["download_location"], streamer[0], streamer[0], date)]
+                                # "videos/{}/{}_{}.mp4".format(streamer[0], streamer[0], date)]
+
                         # append idx and process to processes list
                         self.processes.append([streamer[0], subprocess.Popen(args, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)])
 

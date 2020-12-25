@@ -19,7 +19,7 @@ class Daemon:
 
     def __init__(self):
         # setup logger
-        self.logger = logging.getLogger("Recordurbate")
+        self.logger = logging.getLogger("Recbate")
         self.logger.setLevel(logging.DEBUG)
         
         fh = logging.FileHandler(self.logfile)
@@ -75,7 +75,7 @@ class Daemon:
 
         # if found, exit
         if pid:
-            print("Pid file found, is Recordurbate already running? pid: {}".format(pid))
+            print("Pid file found, is Recbate already running? pid: {}".format(pid))
             sys.exit(1)
 
         # continue
